@@ -45,10 +45,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(58, 87);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(44, 71);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 94);
+            this.button1.Size = new System.Drawing.Size(115, 76);
             this.button1.TabIndex = 0;
             this.button1.Text = "รับรถ";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,10 +55,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(326, 87);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(244, 71);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 94);
+            this.button2.Size = new System.Drawing.Size(110, 76);
             this.button2.TabIndex = 1;
             this.button2.Text = "ชำระเงิน";
             this.button2.UseVisualStyleBackColor = true;
@@ -67,10 +65,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(579, 87);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(434, 71);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 94);
+            this.button3.Size = new System.Drawing.Size(115, 76);
             this.button3.TabIndex = 2;
             this.button3.Text = "พนักงาน";
             this.button3.UseVisualStyleBackColor = true;
@@ -83,7 +80,8 @@
             this.menu1ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -94,29 +92,28 @@
             this.menu1ToolStripMenuItem1,
             this.menu2ToolStripMenuItem});
             this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
-            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menu1ToolStripMenuItem.Text = "Menu";
             this.menu1ToolStripMenuItem.Click += new System.EventHandler(this.menu1ToolStripMenuItem_Click);
             // 
             // menu1ToolStripMenuItem1
             // 
             this.menu1ToolStripMenuItem1.Name = "menu1ToolStripMenuItem1";
-            this.menu1ToolStripMenuItem1.Size = new System.Drawing.Size(137, 26);
+            this.menu1ToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
             this.menu1ToolStripMenuItem1.Text = "Menu1";
             this.menu1ToolStripMenuItem1.Click += new System.EventHandler(this.menu1ToolStripMenuItem1_Click);
             // 
             // menu2ToolStripMenuItem
             // 
             this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
-            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.menu2ToolStripMenuItem.Text = "Menu2";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(835, 87);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(626, 71);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(153, 94);
+            this.button4.Size = new System.Drawing.Size(115, 76);
             this.button4.TabIndex = 4;
             this.button4.Text = "สต๊อกสินค้า";
             this.button4.UseVisualStyleBackColor = true;
@@ -124,49 +121,48 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(58, 267);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(44, 217);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(153, 94);
+            this.button5.Size = new System.Drawing.Size(115, 76);
             this.button5.TabIndex = 5;
             this.button5.Text = "รายงาน";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(320, 267);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(240, 217);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(153, 94);
+            this.button6.Size = new System.Drawing.Size(115, 76);
             this.button6.TabIndex = 6;
             this.button6.Text = "เช็คประวัติ";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(579, 267);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Location = new System.Drawing.Point(434, 217);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(153, 94);
+            this.button7.Size = new System.Drawing.Size(115, 76);
             this.button7.TabIndex = 7;
             this.button7.Text = "เช็คจำนวนแพคเกต";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(835, 267);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Location = new System.Drawing.Point(626, 217);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(153, 94);
+            this.button8.Size = new System.Drawing.Size(115, 76);
             this.button8.TabIndex = 8;
             this.button8.Text = "ตั้งรหัสผ่าน";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -177,7 +173,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);

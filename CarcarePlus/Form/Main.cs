@@ -25,8 +25,7 @@ namespace CarcarePlus
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 x = new Form2();
-            x.Show();
+            new Payment().Show();
         }
 
         private void menu1ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,7 +51,22 @@ namespace CarcarePlus
 
         private void button4_Click(object sender, EventArgs e)
         {
+            new Stock().Show();
+        }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new History().Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            new Report().Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new Package().Show();
         }
     }
 }
