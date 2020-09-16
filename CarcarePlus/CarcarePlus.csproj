@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Core\Alert.cs" />
     <Compile Include="Form\Main.cs">
       <SubType>Form</SubType>
@@ -57,22 +63,28 @@
     <Compile Include="Form\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="History.cs">
+    <Compile Include="Form\History.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="History.Designer.cs">
+    <Compile Include="Form\History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
-    <Compile Include="Package.cs">
+    <Compile Include="Form\Package.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Package.Designer.cs">
+    <Compile Include="Form\Package.Designer.cs">
       <DependentUpon>Package.cs</DependentUpon>
     </Compile>
-    <Compile Include="Payment.cs">
+    <Compile Include="Form\Password.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Payment.Designer.cs">
+    <Compile Include="Form\Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Payment.Designer.cs">
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -89,12 +101,15 @@
     <Compile Include="Form\Stock.Designer.cs">
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report.cs">
+    <Compile Include="Form\Report.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report.Designer.cs">
+    <Compile Include="Form\Report.Designer.cs">
       <DependentUpon>Report.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>

@@ -40,6 +40,11 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.ขอมลพนฐษนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.เครองมอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.รายงานToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ชวยเหลอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.เกยวกบโปรแกรมToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +82,12 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menu1ToolStripMenuItem});
+            this.menu1ToolStripMenuItem,
+            this.ขอมลพนฐษนToolStripMenuItem,
+            this.เครองมอToolStripMenuItem,
+            this.รายงานToolStripMenuItem,
+            this.ชวยเหลอToolStripMenuItem,
+            this.เกยวกบโปรแกรมToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -92,8 +102,8 @@
             this.menu1ToolStripMenuItem1,
             this.menu2ToolStripMenuItem});
             this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
-            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menu1ToolStripMenuItem.Text = "Menu";
+            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.menu1ToolStripMenuItem.Text = "ตั้งค่่า";
             this.menu1ToolStripMenuItem.Click += new System.EventHandler(this.menu1ToolStripMenuItem_Click);
             // 
             // menu1ToolStripMenuItem1
@@ -157,6 +167,39 @@
             this.button8.TabIndex = 8;
             this.button8.Text = "ตั้งรหัสผ่าน";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // ขอมลพนฐษนToolStripMenuItem
+            // 
+            this.ขอมลพนฐษนToolStripMenuItem.Name = "ขอมลพนฐษนToolStripMenuItem";
+            this.ขอมลพนฐษนToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
+            this.ขอมลพนฐษนToolStripMenuItem.Text = "ข้อมูลพื้นฐาน";
+            this.ขอมลพนฐษนToolStripMenuItem.Click += new System.EventHandler(this.ขอมลพนฐษนToolStripMenuItem_Click);
+            // 
+            // เครองมอToolStripMenuItem
+            // 
+            this.เครองมอToolStripMenuItem.Name = "เครองมอToolStripMenuItem";
+            this.เครองมอToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.เครองมอToolStripMenuItem.Text = "เครื่องมือ";
+            // 
+            // รายงานToolStripMenuItem
+            // 
+            this.รายงานToolStripMenuItem.Name = "รายงานToolStripMenuItem";
+            this.รายงานToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.รายงานToolStripMenuItem.Text = "รายงาน";
+            // 
+            // ชวยเหลอToolStripMenuItem
+            // 
+            this.ชวยเหลอToolStripMenuItem.Name = "ชวยเหลอToolStripMenuItem";
+            this.ชวยเหลอToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.ชวยเหลอToolStripMenuItem.Text = "ช่วยเหลือ";
+            // 
+            // เกยวกบโปรแกรมToolStripMenuItem
+            // 
+            this.เกยวกบโปรแกรมToolStripMenuItem.Name = "เกยวกบโปรแกรมToolStripMenuItem";
+            this.เกยวกบโปรแกรมToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.เกยวกบโปรแกรมToolStripMenuItem.Text = "เกี่ยวกับโปรแกรม";
+            this.เกยวกบโปรแกรมToolStripMenuItem.Click += new System.EventHandler(this.เกยวกบโปรแกรมToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -196,6 +239,11 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ToolStripMenuItem ขอมลพนฐษนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem เครองมอToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem รายงานToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ชวยเหลอToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem เกยวกบโปรแกรมToolStripMenuItem;
     }
 }
 

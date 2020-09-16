@@ -68,5 +68,20 @@ namespace CarcarePlus
         {
             new Package().Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            new Password().Show();
+        }
+
+        private void ขอมลพนฐษนToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void เกยวกบโปรแกรมToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new About().Show();
+        }
     }
 }
