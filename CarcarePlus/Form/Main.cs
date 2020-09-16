@@ -19,8 +19,7 @@ namespace CarcarePlus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string message = "Simple MessageBox";
-            MessageBox.Show(message);
+            new CarIn().ShowDialog();   
         }
 
         private void button2_Click(object sender, EventArgs e)
