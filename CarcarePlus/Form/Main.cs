@@ -24,7 +24,7 @@ namespace CarcarePlus
 
         private void button2_Click(object sender, EventArgs e)
         {
-           new ญฟั().ShowDialog();
+           
         }
 
         private void menu1ToolStripMenuItem_Click(object sender, EventArgs e)

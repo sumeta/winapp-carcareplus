@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Staff";
             this.Text = "พนักงาน";
+            this.Load += new System.EventHandler(this.Staff_Load);
             this.ResumeLayout(false);
 
         }
