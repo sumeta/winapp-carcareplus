@@ -19,8 +19,10 @@ namespace CarcarePlus
 
         private void Staff_Load(object sender, EventArgs e)
         {
-            var con = new SQLiteConnection("Data Source=./db.db;Version=3;New=False;Compress=True;");
-            con.Open();
+            //var con = new SQLiteConnection("Data Source=./db.db;Version=3;New=False;Compress=True;");
+            //con.Open();
+            var db = new Db();
+            var con = db.connect();
 
             string stm = "SELECT * FROM staff";
 
