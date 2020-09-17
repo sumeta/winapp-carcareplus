@@ -13,6 +13,9 @@ namespace CarcarePlus
 {
     public partial class Staff : Form
     {
+        private int rowIndex = 0;
+        private int id = 0;
+
         public Staff()
         {
             InitializeComponent();
@@ -25,30 +28,30 @@ namespace CarcarePlus
             var db = new Db();
             var con = db.connect();
 
-            string stm = "SELECT * FROM staff";
+            //string stm = "SELECT * FROM staff";
 
-            var cmd = new SQLiteCommand(stm, con);
-            SQLiteDataReader rdr = cmd.ExecuteReader();
+            //var cmd = new SQLiteCommand(stm, con);
+            //SQLiteDataReader rdr = cmd.ExecuteReader();
 
-            Console.WriteLine("abc");
+            //Console.WriteLine("abc");
 
-            while (rdr.Read())
-            {
-                Console.WriteLine($"{rdr.GetInt32(0)} {rdr.GetString(1)} {rdr.GetString(2)}");
-            }
+            //while (rdr.Read())
+            //{
+            //    Console.WriteLine($"{rdr.GetInt32(0)} {rdr.GetString(1)} {rdr.GetString(2)}");
+            //}
 
 
-            SQLiteCommand comm = new SQLiteCommand("Select * From staff", con);
+            SQLiteCommand comm = new SQLiteCommand("select * from staff", con);
             using (SQLiteDataReader read = comm.ExecuteReader())
             {
                 while (read.Read())
                 {
                     dataGridView1.Rows.Add(new object[] {
-                //read.GetValue(0),  // U can use column index
-                read.GetValue(read.GetOrdinal("Id")),  // Or column name like this
-                read.GetValue(read.GetOrdinal("Name")),
-                read.GetValue(read.GetOrdinal("Tel"))
-            });
+                        //read.GetValue(0),  // U can use column index
+                        read.GetValue(read.GetOrdinal("Id")),  // Or column name like this
+                        read.GetValue(read.GetOrdinal("Name")),
+                        read.GetValue(read.GetOrdinal("Tel"))
+                });
                 }
             }
 
@@ -58,7 +61,9 @@ namespace CarcarePlus
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            rowIndex = dataGridView1.CurrentRow.Index;
+            var rId = dataGridView1.CurrentRow.Cells["id"].Value.ToString();
+            id = Int32.Parse(rId);
 
             if (dataGridView1.CurrentCell.ColumnIndex >= 0  && e.RowIndex != -1)
             {
@@ -108,7 +113,39 @@ namespace CarcarePlus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("OK");
+
+            var db = new Db();
+            var con = db.connect();
+            var cmd = new SQLiteCommand(con);
+            var stm = "UPDATE staff SET tel = :tel , name= :name WHERE id = :id";
+            cmd.Parameters.Add("name", DbType.String).Value = textBox1.Text;
+            cmd.Parameters.Add("tel", DbType.String).Value = textBox2.Text;
+            cmd.Parameters.Add("id", DbType.Int32).Value = id;
+            cmd.CommandText = stm;
+            cmd.ExecuteNonQuery();
+            
+            dataGridView1.Rows[rowIndex].Cells["StaffName"].Value = textBox1.Text.ToString();
+            dataGridView1.Rows[rowIndex].Cells["Tel"].Value = textBox2.Text.ToString();
+
+            MessageBox.Show("Save Success : " + textBox1.Text,"OK");
+
+
+        }
+
+        private void dataGridView1_CellClick(object sender, EventArgs e)
+        {
+            rowIndex = dataGridView1.CurrentRow.Index;
+            var rId = dataGridView1.CurrentRow.Cells["id"].Value.ToString();
+            id = Int32.Parse(rId);
+
+            if (dataGridView1.CurrentCell.ColumnIndex >= 0)
+            {
+                if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
+                {
+                    textBox1.Text = dataGridView1.CurrentCell.Value.ToString();
+                    textBox2.Text = dataGridView1.CurrentRow.Cells["Tel"].Value.ToString();
+                }
+            }
         }
     }
 }
