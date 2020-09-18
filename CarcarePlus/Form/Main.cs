@@ -19,7 +19,7 @@ namespace CarcarePlus
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new CarIn().ShowDialog();   
+            new CarIn().ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace CarcarePlus
 
         private void button6_Click(object sender, EventArgs e)
         {
-            new History().Show();
+            new History().ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
