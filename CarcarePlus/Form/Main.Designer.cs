@@ -116,6 +116,7 @@
             // 
             this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
             resources.ApplyResources(this.staffToolStripMenuItem, "staffToolStripMenuItem");
+            this.staffToolStripMenuItem.Click += new System.EventHandler(this.staffToolStripMenuItem_Click);
             // 
             // Main
             // 

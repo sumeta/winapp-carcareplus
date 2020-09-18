@@ -73,6 +73,9 @@ namespace CarcarePlus
             new Password().Show();
         }
 
-        
+        private void staffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Staff().ShowDialog();
+        }
     }
 }
