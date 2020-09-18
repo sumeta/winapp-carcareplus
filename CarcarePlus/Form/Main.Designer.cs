@@ -34,18 +34,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.เครองมอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายงานToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ชวยเหลอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.เกยวกบโปรแกรมToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +72,6 @@
             this.ToolStripMenuItem,
             this.เครองมอToolStripMenuItem,
             this.รายงานToolStripMenuItem,
-            this.ชวยเหลอToolStripMenuItem,
             this.เกยวกบโปรแกรมToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
@@ -86,26 +79,14 @@
             // 
             // menu1ToolStripMenuItem
             // 
-            this.menu1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menu1ToolStripMenuItem1,
-            this.menu2ToolStripMenuItem});
             this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
             resources.ApplyResources(this.menu1ToolStripMenuItem, "menu1ToolStripMenuItem");
             this.menu1ToolStripMenuItem.Click += new System.EventHandler(this.menu1ToolStripMenuItem_Click);
             // 
-            // menu1ToolStripMenuItem1
-            // 
-            this.menu1ToolStripMenuItem1.Name = "menu1ToolStripMenuItem1";
-            resources.ApplyResources(this.menu1ToolStripMenuItem1, "menu1ToolStripMenuItem1");
-            this.menu1ToolStripMenuItem1.Click += new System.EventHandler(this.menu1ToolStripMenuItem1_Click);
-            // 
-            // menu2ToolStripMenuItem
-            // 
-            this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
-            resources.ApplyResources(this.menu2ToolStripMenuItem, "menu2ToolStripMenuItem");
-            // 
             // ToolStripMenuItem
             // 
+            this.ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.staffToolStripMenuItem});
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
             resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             // 
@@ -119,22 +100,10 @@
             this.รายงานToolStripMenuItem.Name = "รายงานToolStripMenuItem";
             resources.ApplyResources(this.รายงานToolStripMenuItem, "รายงานToolStripMenuItem");
             // 
-            // ชวยเหลอToolStripMenuItem
-            // 
-            this.ชวยเหลอToolStripMenuItem.Name = "ชวยเหลอToolStripMenuItem";
-            resources.ApplyResources(this.ชวยเหลอToolStripMenuItem, "ชวยเหลอToolStripMenuItem");
-            // 
             // เกยวกบโปรแกรมToolStripMenuItem
             // 
             this.เกยวกบโปรแกรมToolStripMenuItem.Name = "เกยวกบโปรแกรมToolStripMenuItem";
             resources.ApplyResources(this.เกยวกบโปรแกรมToolStripMenuItem, "เกยวกบโปรแกรมToolStripMenuItem");
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -143,36 +112,16 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // staffToolStripMenuItem
             // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
+            resources.ApplyResources(this.staffToolStripMenuItem, "staffToolStripMenuItem");
             // 
             // Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -194,18 +143,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menu1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem menu1ToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem menu2ToolStripMenuItem;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem เครองมอToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem รายงานToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ชวยเหลอToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem เกยวกบโปรแกรมToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem;
     }
 }
 
