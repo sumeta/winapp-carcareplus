@@ -212,10 +212,10 @@
   <data name="menu1ToolStripMenuItem.Text" xml:space="preserve">
     <value>ตั้งค่่า</value>
   </data>
-  <data name="ขอมลพนฐษนToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 20</value>
   </data>
-  <data name="ขอมลพนฐษนToolStripMenuItem.Text" xml:space="preserve">
+  <data name="ToolStripMenuItem.Text" xml:space="preserve">
     <value>ข้อมูลพื้นฐาน</value>
   </data>
   <data name="เครองมอToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -423,10 +423,10 @@
   <data name="&gt;&gt;menu2ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ขอมลพนฐษนToolStripMenuItem.Name" xml:space="preserve">
-    <value>ขอมลพนฐษนToolStripMenuItem</value>
+  <data name="&gt;&gt;ToolStripMenuItem.Name" xml:space="preserve">
+    <value>ToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;ขอมลพนฐษนToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;ToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;เครองมอToolStripMenuItem.Name" xml:space="preserve">

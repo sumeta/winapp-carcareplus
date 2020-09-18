@@ -36,7 +36,7 @@
             this.menu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ขอมลพนฐษนToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.เครองมอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายงานToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ชวยเหลอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,7 +75,7 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menu1ToolStripMenuItem,
-            this.ขอมลพนฐษนToolStripMenuItem,
+            this.ToolStripMenuItem,
             this.เครองมอToolStripMenuItem,
             this.รายงานToolStripMenuItem,
             this.ชวยเหลอToolStripMenuItem,
@@ -104,11 +104,10 @@
             this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
             resources.ApplyResources(this.menu2ToolStripMenuItem, "menu2ToolStripMenuItem");
             // 
-            // ขอมลพนฐษนToolStripMenuItem
+            // ToolStripMenuItem
             // 
-            this.ขอมลพนฐษนToolStripMenuItem.Name = "ขอมลพนฐษนToolStripMenuItem";
-            resources.ApplyResources(this.ขอมลพนฐษนToolStripMenuItem, "ขอมลพนฐษนToolStripMenuItem");
-            this.ขอมลพนฐษนToolStripMenuItem.Click += new System.EventHandler(this.ขอมลพนฐษนToolStripMenuItem_Click);
+            this.ToolStripMenuItem.Name = "ToolStripMenuItem";
+            resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             // 
             // เครองมอToolStripMenuItem
             // 
@@ -129,7 +128,6 @@
             // 
             this.เกยวกบโปรแกรมToolStripMenuItem.Name = "เกยวกบโปรแกรมToolStripMenuItem";
             resources.ApplyResources(this.เกยวกบโปรแกรมToolStripMenuItem, "เกยวกบโปรแกรมToolStripMenuItem");
-            this.เกยวกบโปรแกรมToolStripMenuItem.Click += new System.EventHandler(this.เกยวกบโปรแกรมToolStripMenuItem_Click);
             // 
             // button4
             // 
@@ -203,7 +201,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.ToolStripMenuItem ขอมลพนฐษนToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem เครองมอToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem รายงานToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ชวยเหลอToolStripMenuItem;
