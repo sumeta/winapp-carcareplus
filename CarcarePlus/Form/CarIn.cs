@@ -51,7 +51,8 @@ namespace CarcarePlus
                 return;
             }
 
-            if (!textBox5.Text.All(char.IsDigit))
+            float f;
+            if (!float.TryParse(textBox5.Text, out f))
             {
                 MessageBox.Show("กรุณาระบุราคาเป็นตัวเลข");
                 return;
@@ -71,7 +72,7 @@ namespace CarcarePlus
             cmd.CommandText = stm;
             cmd.ExecuteNonQuery();
 
-            MessageBox.Show("OK","Success");
+            MessageBox.Show("บันทึกข้อมูลสำเร็จ","Success");
 
             Close();
 
@@ -83,6 +84,11 @@ namespace CarcarePlus
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -136,10 +136,11 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(629, 166);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.MaxLength = 6;
+            this.textBox5.MaxLength = 8;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(317, 22);
             this.textBox5.TabIndex = 9;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // richTextBox1
             // 

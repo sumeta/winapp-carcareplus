@@ -36,7 +36,7 @@ namespace CarcarePlus
             var db = new Db();
             var con = db.connect();
 
-            SQLiteCommand comm = new SQLiteCommand("select * from servicehdr where PayStatus='N'", con);
+            SQLiteCommand comm = new SQLiteCommand("select * from servicehdr where PayStatus='N' AND Status = 'N' ", con);
             using (SQLiteDataReader read = comm.ExecuteReader())
             {
                 while (read.Read())
@@ -63,10 +63,17 @@ namespace CarcarePlus
                 MessageBox.Show("เลือกรายการก่อน");
                 return;
             }
+
+            var confirmResult = MessageBox.Show("คูณแน่ใจหรือว่าต้องการลบข้อมูล ?","ยืนยันการลบข้อมูล",MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.No)
+            {
+                return;
+            }
+
             var db = new Db();
             var con = db.connect();
             var cmd = new SQLiteCommand(con);
-            var stm = "UPDATE servicehdr SET PayStatus = 'Y',PayTime = datetime('now') WHERE id = :id";
+            var stm = "UPDATE servicehdr SET Status = 'D' WHERE id = :id";
             cmd.Parameters.Add("id", DbType.Int32).Value = id;
             cmd.CommandText = stm;
             cmd.ExecuteNonQuery();
@@ -79,9 +86,9 @@ namespace CarcarePlus
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.CurrentCell.ColumnIndex >= 0 && e.RowIndex != -1)
+            if (dataGridView1.CurrentRow != null)
             {
-
+                Close();
                 new PaymentDetail(id).ShowDialog();
             }
         }

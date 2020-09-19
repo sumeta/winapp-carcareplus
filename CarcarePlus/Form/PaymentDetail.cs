@@ -36,11 +36,36 @@ namespace CarcarePlus
                     label7.Text = read.GetValue(read.GetOrdinal("Service")).ToString();
                     label8.Text = read.GetValue(read.GetOrdinal("InTime")).ToString();
                     label10.Text = read.GetValue(read.GetOrdinal("TotalPrice")).ToString();
+                    richTextBox1.Text = read.GetValue(read.GetOrdinal("Note")).ToString();
 
 
                 }
             }
 
+
+        }
+
+        private void BtnPay_Click(object sender, EventArgs e)
+        {
+
+            var confirmResult = MessageBox.Show("คุณต้องการชำระเงินใช่หรือไม่ ?", "ยืนยันข้อมูล", MessageBoxButtons.YesNo);
+            if (confirmResult == DialogResult.No)
+            {
+                return;
+            }
+
+            var db = new Db();
+            var con = db.connect();
+            var cmd = new SQLiteCommand(con);
+            var stm = "UPDATE servicehdr SET Note=:note , PayStatus = 'Y',PayTime = datetime('now') WHERE id = :id";
+            cmd.Parameters.Add("id", DbType.Int32).Value = id;
+            cmd.Parameters.Add("note", DbType.String).Value = richTextBox1.Text;
+            cmd.CommandText = stm;
+            cmd.ExecuteNonQuery();
+
+            Close();
+
+            new Payment().ShowDialog();
 
         }
     }

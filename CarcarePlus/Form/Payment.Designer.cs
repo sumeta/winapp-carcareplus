@@ -36,6 +36,7 @@
             this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BtnPay = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +57,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(986, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(986, 386);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -113,19 +114,31 @@
             // 
             // BtnPay
             // 
-            this.BtnPay.Location = new System.Drawing.Point(31, 358);
+            this.BtnPay.Location = new System.Drawing.Point(889, 447);
             this.BtnPay.Name = "BtnPay";
-            this.BtnPay.Size = new System.Drawing.Size(192, 94);
+            this.BtnPay.Size = new System.Drawing.Size(128, 55);
             this.BtnPay.TabIndex = 1;
-            this.BtnPay.Text = "จ่ายเงิน";
+            this.BtnPay.Text = "ลบ";
             this.BtnPay.UseVisualStyleBackColor = true;
             this.BtnPay.Click += new System.EventHandler(this.BtnPay_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Coral;
+            this.label1.Location = new System.Drawing.Point(28, 528);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(247, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "* Double Click ที่รายการเพิ่มชำระเงิน";
             // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnPay);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -135,6 +148,7 @@
             this.Load += new System.EventHandler(this.Payment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -148,5 +162,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CusName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Service;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Label label1;
     }
 }

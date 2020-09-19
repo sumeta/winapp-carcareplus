@@ -24,7 +24,7 @@ namespace CarcarePlus
             var db = new Db();
             var con = db.connect();
 
-            SQLiteCommand comm = new SQLiteCommand("select * from servicehdr", con);
+            SQLiteCommand comm = new SQLiteCommand("select * from servicehdr where Status = 'N' ", con);
             using (SQLiteDataReader read = comm.ExecuteReader())
             {
                 while (read.Read())
@@ -41,13 +41,12 @@ namespace CarcarePlus
                     });
 
                     countItem++;
-                    sumPrice += Int32.Parse(read.GetValue(read.GetOrdinal("TotalPrice")).ToString());
-
+                    sumPrice += float.Parse(read.GetValue(read.GetOrdinal("TotalPrice")).ToString());
                 }
             }
 
-            label2.Text = countItem.ToString();
-            label4.Text = sumPrice.ToString();
+            label2.Text = String.Format("{0:n0}", countItem);
+            label4.Text = String.Format("{0:n}", sumPrice);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
