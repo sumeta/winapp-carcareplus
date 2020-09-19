@@ -25,9 +25,6 @@ namespace CarcarePlus
         {
             var rId = dataGridView1.CurrentRow.Cells["idx"].Value.ToString();
             id = Int32.Parse(rId);
-            MessageBox.Show(id.ToString());
-
-
         }
 
         private void Payment_Load(object sender, EventArgs e)
@@ -46,7 +43,7 @@ namespace CarcarePlus
                         read.GetValue(read.GetOrdinal("InTime")),
                         read.GetValue(read.GetOrdinal("CarName")),
                         read.GetValue(read.GetOrdinal("CusName")),
-                        "",
+                        read.GetValue(read.GetOrdinal("Service")),
                         read.GetValue(read.GetOrdinal("TotalPrice"))
                 });
                 }
@@ -57,11 +54,15 @@ namespace CarcarePlus
         private void BtnPay_Click(object sender, EventArgs e)
         {
 
-
+            if(id == 0)
+            {
+                MessageBox.Show("เลือกรายการก่อน");
+                return;
+            }
             var db = new Db();
             var con = db.connect();
             var cmd = new SQLiteCommand(con);
-            var stm = "UPDATE servicehdr SET PayStatus = 'Y' WHERE id = :id";
+            var stm = "UPDATE servicehdr SET PayStatus = 'Y',PayTime = datetime('now') WHERE id = :id";
             cmd.Parameters.Add("id", DbType.Int32).Value = id;
             cmd.CommandText = stm;
             cmd.ExecuteNonQuery();
@@ -69,7 +70,6 @@ namespace CarcarePlus
             var rowIndex = dataGridView1.CurrentRow.Index;
             dataGridView1.Rows.RemoveAt(rowIndex);
 
-            MessageBox.Show("OK");
 
         }
     }

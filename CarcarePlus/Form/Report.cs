@@ -33,11 +33,17 @@ namespace CarcarePlus
                         read.GetValue(read.GetOrdinal("InTime")),
                         read.GetValue(read.GetOrdinal("CarName")),
                         read.GetValue(read.GetOrdinal("CusName")),
-                        "",
-                        read.GetValue(read.GetOrdinal("TotalPrice"))
+                        read.GetValue(read.GetOrdinal("Service")),
+                        read.GetValue(read.GetOrdinal("TotalPrice")),
+                        read.GetValue(read.GetOrdinal("PayTime"))
                 });
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

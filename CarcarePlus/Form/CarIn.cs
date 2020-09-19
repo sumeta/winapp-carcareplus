@@ -30,12 +30,35 @@ namespace CarcarePlus
         private void button1_Click(object sender, EventArgs e)
         {
 
+            if(textBox1.Text.Length == 0)
+            {
+                MessageBox.Show("กรุณาระบุทะเบียนรถ");
+                return;
+            }
+            if (textBox2.Text.Length == 0)
+            {
+                MessageBox.Show("กรุณาระบุชื่อลูกค้า");
+                return;
+            }
+            if (textBox4.Text.Length == 0)
+            {
+                MessageBox.Show("กรุณาระบุขนาด");
+                return;
+            }
+            if (textBox5.Text.Length == 0)
+            {
+                MessageBox.Show("กรุณาระบุราคา");
+                return;
+            }
+
+
             var db = new Db();
             var con = db.connect();
             var cmd = new SQLiteCommand(con);
-            var stm = "INSERT INTO servicehdr(InTime,CarName, CusName, CusSize, TotalPrice) VALUES(datetime('now'),:name, :cusnam, :size, :price)";
+            var stm = "INSERT INTO servicehdr(InTime,CarName, CusName, CusSize,Service, TotalPrice) VALUES(datetime('now'),:name, :cusnam, :size,:service, :price)";
             cmd.Parameters.Add("name", DbType.String).Value = textBox1.Text;
             cmd.Parameters.Add("cusnam", DbType.String).Value = textBox2.Text;
+            cmd.Parameters.Add("service", DbType.String).Value = textBox3.Text;
             cmd.Parameters.Add("size", DbType.String).Value = textBox4.Text;
             cmd.Parameters.Add("price", DbType.String).Value = textBox5.Text;
             cmd.CommandText = stm;
@@ -44,6 +67,11 @@ namespace CarcarePlus
             MessageBox.Show("OK","Success");
 
             Close();
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

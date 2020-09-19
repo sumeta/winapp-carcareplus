@@ -34,6 +34,7 @@
             this.CusName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PayTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,8 @@
             this.Car,
             this.CusName,
             this.Service,
-            this.Price});
+            this.Price,
+            this.PayTime});
             this.dataGridView1.Location = new System.Drawing.Point(32, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -55,6 +57,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(986, 150);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // InDate
             // 
@@ -96,13 +99,21 @@
             this.Price.ReadOnly = true;
             this.Price.Width = 125;
             // 
+            // PayTime
+            // 
+            this.PayTime.HeaderText = "จ่ายเงิน";
+            this.PayTime.MinimumWidth = 6;
+            this.PayTime.Name = "PayTime";
+            this.PayTime.ReadOnly = true;
+            this.PayTime.Width = 125;
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Report";
             this.Text = "รายงาน";
             this.Load += new System.EventHandler(this.Report_Load);
@@ -119,5 +130,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CusName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Service;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PayTime;
     }
 }
