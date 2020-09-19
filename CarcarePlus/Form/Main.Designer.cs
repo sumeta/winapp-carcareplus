@@ -34,12 +34,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.เครองมอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.รายงานToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button5 = new System.Windows.Forms.Button();
+            this.dayliyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.weeklyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.monthlyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,8 +73,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menu1ToolStripMenuItem,
             this.ToolStripMenuItem,
-            this.เครองมอToolStripMenuItem,
-            this.รายงานToolStripMenuItem,
+            this.ReportToolStripMenuItem,
             this.AboutToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
@@ -79,9 +81,17 @@
             // 
             // menu1ToolStripMenuItem
             // 
+            this.menu1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StoreToolStripMenuItem});
             this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
             resources.ApplyResources(this.menu1ToolStripMenuItem, "menu1ToolStripMenuItem");
             this.menu1ToolStripMenuItem.Click += new System.EventHandler(this.menu1ToolStripMenuItem_Click);
+            // 
+            // StoreToolStripMenuItem
+            // 
+            this.StoreToolStripMenuItem.Name = "StoreToolStripMenuItem";
+            resources.ApplyResources(this.StoreToolStripMenuItem, "StoreToolStripMenuItem");
+            this.StoreToolStripMenuItem.Click += new System.EventHandler(this.StoreToolStripMenuItem_Click);
             // 
             // ToolStripMenuItem
             // 
@@ -96,15 +106,14 @@
             resources.ApplyResources(this.staffToolStripMenuItem, "staffToolStripMenuItem");
             this.staffToolStripMenuItem.Click += new System.EventHandler(this.staffToolStripMenuItem_Click);
             // 
-            // เครองมอToolStripMenuItem
+            // ReportToolStripMenuItem
             // 
-            this.เครองมอToolStripMenuItem.Name = "เครองมอToolStripMenuItem";
-            resources.ApplyResources(this.เครองมอToolStripMenuItem, "เครองมอToolStripMenuItem");
-            // 
-            // รายงานToolStripMenuItem
-            // 
-            this.รายงานToolStripMenuItem.Name = "รายงานToolStripMenuItem";
-            resources.ApplyResources(this.รายงานToolStripMenuItem, "รายงานToolStripMenuItem");
+            this.ReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dayliyReportToolStripMenuItem,
+            this.weeklyReportToolStripMenuItem,
+            this.monthlyReportToolStripMenuItem});
+            this.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem";
+            resources.ApplyResources(this.ReportToolStripMenuItem, "ReportToolStripMenuItem");
             // 
             // AboutToolStripMenuItem
             // 
@@ -118,6 +127,21 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // dayliyReportToolStripMenuItem
+            // 
+            this.dayliyReportToolStripMenuItem.Name = "dayliyReportToolStripMenuItem";
+            resources.ApplyResources(this.dayliyReportToolStripMenuItem, "dayliyReportToolStripMenuItem");
+            // 
+            // weeklyReportToolStripMenuItem
+            // 
+            this.weeklyReportToolStripMenuItem.Name = "weeklyReportToolStripMenuItem";
+            resources.ApplyResources(this.weeklyReportToolStripMenuItem, "weeklyReportToolStripMenuItem");
+            // 
+            // monthlyReportToolStripMenuItem
+            // 
+            this.monthlyReportToolStripMenuItem.Name = "monthlyReportToolStripMenuItem";
+            resources.ApplyResources(this.monthlyReportToolStripMenuItem, "monthlyReportToolStripMenuItem");
             // 
             // Main
             // 
@@ -147,10 +171,13 @@
         private System.Windows.Forms.ToolStripMenuItem menu1ToolStripMenuItem;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem เครองมอToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem รายงานToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem StoreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dayliyReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem weeklyReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem monthlyReportToolStripMenuItem;
     }
 }
 
