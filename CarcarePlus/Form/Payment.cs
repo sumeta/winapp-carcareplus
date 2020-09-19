@@ -23,8 +23,12 @@ namespace CarcarePlus
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var rId = dataGridView1.CurrentRow.Cells["idx"].Value.ToString();
-            id = Int32.Parse(rId);
+
+            if (dataGridView1.CurrentCell != null && dataGridView1.CurrentCell.Value != null)
+            {
+                var rId = dataGridView1.CurrentRow.Cells["idx"].Value.ToString();
+                id = Int32.Parse(rId);
+            }
         }
 
         private void Payment_Load(object sender, EventArgs e)
@@ -75,8 +79,11 @@ namespace CarcarePlus
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dataGridView1.CurrentCell.ColumnIndex >= 0 && e.RowIndex != -1)
+            {
 
-            new PaymentDetail(id).ShowDialog();
+                new PaymentDetail(id).ShowDialog();
+            }
         }
     }
 }

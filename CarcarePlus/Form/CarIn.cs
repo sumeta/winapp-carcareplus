@@ -51,6 +51,12 @@ namespace CarcarePlus
                 return;
             }
 
+            if (!textBox5.Text.All(char.IsDigit))
+            {
+                MessageBox.Show("กรุณาระบุราคาเป็นตัวเลข");
+                return;
+            }
+
 
             var db = new Db();
             var con = db.connect();
