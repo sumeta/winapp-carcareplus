@@ -101,53 +101,59 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(209, 101);
+            this.textBox1.MaxLength = 20;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 22);
+            this.textBox1.Size = new System.Drawing.Size(417, 22);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(209, 141);
+            this.textBox2.MaxLength = 100;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 22);
+            this.textBox2.Size = new System.Drawing.Size(417, 22);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(209, 176);
+            this.textBox3.MaxLength = 100;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 22);
+            this.textBox3.Size = new System.Drawing.Size(417, 22);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(209, 222);
+            this.textBox4.MaxLength = 20;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 22);
+            this.textBox4.Size = new System.Drawing.Size(417, 22);
             this.textBox4.TabIndex = 9;
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(209, 270);
+            this.richTextBox1.MaxLength = 500;
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(250, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(417, 96);
             this.richTextBox1.TabIndex = 10;
             this.richTextBox1.Text = "";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(116, 428);
+            this.button1.Location = new System.Drawing.Point(209, 412);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 52);
+            this.button1.Size = new System.Drawing.Size(178, 52);
             this.button1.TabIndex = 11;
             this.button1.Text = "บันทึก";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(317, 428);
+            this.button2.Location = new System.Drawing.Point(448, 412);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 52);
+            this.button2.Size = new System.Drawing.Size(178, 52);
             this.button2.TabIndex = 12;
             this.button2.Text = "ปิด";
             this.button2.UseVisualStyleBackColor = true;
@@ -174,6 +180,7 @@
             this.Name = "Store";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ข้อมูลร้าน";
+            this.Load += new System.EventHandler(this.Store_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
