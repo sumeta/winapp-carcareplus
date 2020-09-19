@@ -35,11 +35,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.เครองมอToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.รายงานToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.เกยวกบโปรแกรมToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button5 = new System.Windows.Forms.Button();
-            this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +72,7 @@
             this.ToolStripMenuItem,
             this.เครองมอToolStripMenuItem,
             this.รายงานToolStripMenuItem,
-            this.เกยวกบโปรแกรมToolStripMenuItem});
+            this.AboutToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -90,6 +90,12 @@
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
             resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             // 
+            // staffToolStripMenuItem
+            // 
+            this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
+            resources.ApplyResources(this.staffToolStripMenuItem, "staffToolStripMenuItem");
+            this.staffToolStripMenuItem.Click += new System.EventHandler(this.staffToolStripMenuItem_Click);
+            // 
             // เครองมอToolStripMenuItem
             // 
             this.เครองมอToolStripMenuItem.Name = "เครองมอToolStripMenuItem";
@@ -100,10 +106,11 @@
             this.รายงานToolStripMenuItem.Name = "รายงานToolStripMenuItem";
             resources.ApplyResources(this.รายงานToolStripMenuItem, "รายงานToolStripMenuItem");
             // 
-            // เกยวกบโปรแกรมToolStripMenuItem
+            // AboutToolStripMenuItem
             // 
-            this.เกยวกบโปรแกรมToolStripMenuItem.Name = "เกยวกบโปรแกรมToolStripMenuItem";
-            resources.ApplyResources(this.เกยวกบโปรแกรมToolStripMenuItem, "เกยวกบโปรแกรมToolStripMenuItem");
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            resources.ApplyResources(this.AboutToolStripMenuItem, "AboutToolStripMenuItem");
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // button5
             // 
@@ -111,12 +118,6 @@
             this.button5.Name = "button5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // staffToolStripMenuItem
-            // 
-            this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
-            resources.ApplyResources(this.staffToolStripMenuItem, "staffToolStripMenuItem");
-            this.staffToolStripMenuItem.Click += new System.EventHandler(this.staffToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -148,7 +149,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem เครองมอToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem รายงานToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem เกยวกบโปรแกรมToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem;
     }
 }

@@ -31,6 +31,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.InDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Car = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CusName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -44,6 +45,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.InDate,
             this.Car,
+            this.CusName,
             this.Service,
             this.Price});
             this.dataGridView1.Location = new System.Drawing.Point(31, 34);
@@ -53,6 +55,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(986, 150);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // InDate
             // 
@@ -69,6 +72,14 @@
             this.Car.Name = "Car";
             this.Car.ReadOnly = true;
             this.Car.Width = 125;
+            // 
+            // CusName
+            // 
+            this.CusName.HeaderText = "ชื่อลูกค้า";
+            this.CusName.MinimumWidth = 6;
+            this.CusName.Name = "CusName";
+            this.CusName.ReadOnly = true;
+            this.CusName.Width = 125;
             // 
             // Service
             // 
@@ -92,9 +103,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Payment";
             this.Text = "ชำระเงิน";
+            this.Load += new System.EventHandler(this.Payment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -105,6 +117,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn InDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn Car;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CusName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Service;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
     }

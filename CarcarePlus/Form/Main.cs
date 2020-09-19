@@ -77,5 +77,10 @@ namespace CarcarePlus
         {
             new Staff().ShowDialog();
         }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new About().ShowDialog();
+        }
     }
 }
