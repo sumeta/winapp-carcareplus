@@ -55,12 +55,13 @@ namespace CarcarePlus
             var db = new Db();
             var con = db.connect();
             var cmd = new SQLiteCommand(con);
-            var stm = "INSERT INTO servicehdr(InTime,CarName, CusName, CusSize,Service, TotalPrice) VALUES(datetime('now'),:name, :cusnam, :size,:service, :price)";
+            var stm = "INSERT INTO servicehdr(InTime,CarName, CusName, CusSize,Service, TotalPrice,Note) VALUES(datetime('now'),:name, :cusnam, :size,:service, :price,:note)";
             cmd.Parameters.Add("name", DbType.String).Value = textBox1.Text;
             cmd.Parameters.Add("cusnam", DbType.String).Value = textBox2.Text;
             cmd.Parameters.Add("service", DbType.String).Value = textBox3.Text;
             cmd.Parameters.Add("size", DbType.String).Value = textBox4.Text;
             cmd.Parameters.Add("price", DbType.String).Value = textBox5.Text;
+            cmd.Parameters.Add("note", DbType.String).Value = richTextBox1.Text;
             cmd.CommandText = stm;
             cmd.ExecuteNonQuery();
 
@@ -71,6 +72,11 @@ namespace CarcarePlus
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

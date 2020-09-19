@@ -77,7 +77,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(629, 46);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.MaxLength = 200;
+            this.textBox2.MaxLength = 100;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(317, 22);
             this.textBox2.TabIndex = 3;
@@ -143,13 +143,14 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(160, 222);
+            this.richTextBox1.Location = new System.Drawing.Point(160, 223);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.MaxLength = 1000;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(787, 137);
             this.richTextBox1.TabIndex = 10;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label6
             // 

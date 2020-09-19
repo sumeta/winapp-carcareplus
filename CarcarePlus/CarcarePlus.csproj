@@ -116,6 +116,12 @@
     <Compile Include="Form\Payment.Designer.cs">
       <DependentUpon>Payment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\PaymentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PaymentDetail.Designer.cs">
+      <DependentUpon>PaymentDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Form\Staff.cs">
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\PaymentDetail.resx">
+      <DependentUpon>PaymentDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Report.resx">
       <DependentUpon>Report.cs</DependentUpon>

@@ -72,5 +72,11 @@ namespace CarcarePlus
 
 
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            new PaymentDetail(id).ShowDialog();
+        }
     }
 }

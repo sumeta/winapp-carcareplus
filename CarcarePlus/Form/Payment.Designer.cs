@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BtnPay = new System.Windows.Forms.Button();
             this.idx = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.InDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Car = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CusName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Service = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnPay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,16 +60,7 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // BtnPay
-            // 
-            this.BtnPay.Location = new System.Drawing.Point(31, 358);
-            this.BtnPay.Name = "BtnPay";
-            this.BtnPay.Size = new System.Drawing.Size(192, 94);
-            this.BtnPay.TabIndex = 1;
-            this.BtnPay.Text = "จ่ายเงิน";
-            this.BtnPay.UseVisualStyleBackColor = true;
-            this.BtnPay.Click += new System.EventHandler(this.BtnPay_Click);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // idx
             // 
@@ -120,6 +111,16 @@
             this.Price.ReadOnly = true;
             this.Price.Width = 125;
             // 
+            // BtnPay
+            // 
+            this.BtnPay.Location = new System.Drawing.Point(31, 358);
+            this.BtnPay.Name = "BtnPay";
+            this.BtnPay.Size = new System.Drawing.Size(192, 94);
+            this.BtnPay.TabIndex = 1;
+            this.BtnPay.Text = "จ่ายเงิน";
+            this.BtnPay.UseVisualStyleBackColor = true;
+            this.BtnPay.Click += new System.EventHandler(this.BtnPay_Click);
+            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -129,6 +130,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Payment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ชำระเงิน";
             this.Load += new System.EventHandler(this.Payment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
