@@ -33,6 +33,10 @@ namespace CarcarePlus
                 {
                     label3.Text = read.GetValue(read.GetOrdinal("CarName")).ToString();
                     label5.Text = read.GetValue(read.GetOrdinal("CusName")).ToString();
+                    label7.Text = read.GetValue(read.GetOrdinal("Service")).ToString();
+                    label8.Text = read.GetValue(read.GetOrdinal("InTime")).ToString();
+                    label10.Text = read.GetValue(read.GetOrdinal("TotalPrice")).ToString();
+
 
                 }
             }

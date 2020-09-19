@@ -19,6 +19,8 @@ namespace CarcarePlus
 
         private void Report_Load(object sender, EventArgs e)
         {
+            int countItem = 0;
+            double sumPrice = 0.00;
             var db = new Db();
             var con = db.connect();
 
@@ -36,9 +38,16 @@ namespace CarcarePlus
                         read.GetValue(read.GetOrdinal("Service")),
                         read.GetValue(read.GetOrdinal("TotalPrice")),
                         read.GetValue(read.GetOrdinal("PayTime"))
-                });
+                    });
+
+                    countItem++;
+                    sumPrice += Int32.Parse(read.GetValue(read.GetOrdinal("TotalPrice")).ToString());
+
                 }
             }
+
+            label2.Text = countItem.ToString();
+            label4.Text = sumPrice.ToString();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
