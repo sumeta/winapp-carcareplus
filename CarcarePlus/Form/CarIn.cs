@@ -40,7 +40,7 @@ namespace CarcarePlus
                 MessageBox.Show("กรุณาระบุชื่อลูกค้า");
                 return;
             }
-            if (textBox4.Text.Length == 0)
+            if (comboBox1.Text.Length == 0)
             {
                 MessageBox.Show("กรุณาระบุขนาด");
                 return;
@@ -66,7 +66,7 @@ namespace CarcarePlus
             cmd.Parameters.Add("name", DbType.String).Value = textBox1.Text;
             cmd.Parameters.Add("cusnam", DbType.String).Value = textBox2.Text;
             cmd.Parameters.Add("service", DbType.String).Value = textBox3.Text;
-            cmd.Parameters.Add("size", DbType.String).Value = textBox4.Text;
+            cmd.Parameters.Add("size", DbType.String).Value = comboBox1.Text;
             cmd.Parameters.Add("price", DbType.String).Value = textBox5.Text;
             cmd.Parameters.Add("note", DbType.String).Value = richTextBox1.Text;
             cmd.CommandText = stm;
@@ -91,6 +91,13 @@ namespace CarcarePlus
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CarIn_Load(object sender, EventArgs e)
+        {
+            string[] employees = new string[]{"S","M","L","LL","XL","XXL"};
+
+            comboBox1.Items.AddRange(employees);
         }
     }
 }
