@@ -95,9 +95,21 @@ namespace CarcarePlus
 
         private void CarIn_Load(object sender, EventArgs e)
         {
-            string[] employees = new string[]{"S","M","L","LL","XL","XXL"};
+            List<string> employees = new List<string>();
 
-            comboBox1.Items.AddRange(employees);
+            var db = new Db();
+            var con = db.connect();
+
+            SQLiteCommand comm = new SQLiteCommand("select * from carsize", con);
+            using (SQLiteDataReader read = comm.ExecuteReader())
+            {
+                while (read.Read())
+                {
+                    employees.Add(read.GetValue(read.GetOrdinal("Size")).ToString());
+                }
+            }
+
+            comboBox1.Items.AddRange(employees.ToArray());
         }
     }
 }
