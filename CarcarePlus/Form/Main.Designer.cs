@@ -38,11 +38,12 @@
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button5 = new System.Windows.Forms.Button();
             this.dayliyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weeklyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monthlyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button5 = new System.Windows.Forms.Button();
+            this.carSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,7 +97,8 @@
             // ToolStripMenuItem
             // 
             this.ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.staffToolStripMenuItem});
+            this.staffToolStripMenuItem,
+            this.carSizeToolStripMenuItem});
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
             resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             // 
@@ -115,19 +117,6 @@
             this.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem";
             resources.ApplyResources(this.ReportToolStripMenuItem, "ReportToolStripMenuItem");
             // 
-            // AboutToolStripMenuItem
-            // 
-            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            resources.ApplyResources(this.AboutToolStripMenuItem, "AboutToolStripMenuItem");
-            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
-            // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // dayliyReportToolStripMenuItem
             // 
             this.dayliyReportToolStripMenuItem.Name = "dayliyReportToolStripMenuItem";
@@ -142,6 +131,25 @@
             // 
             this.monthlyReportToolStripMenuItem.Name = "monthlyReportToolStripMenuItem";
             resources.ApplyResources(this.monthlyReportToolStripMenuItem, "monthlyReportToolStripMenuItem");
+            // 
+            // AboutToolStripMenuItem
+            // 
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            resources.ApplyResources(this.AboutToolStripMenuItem, "AboutToolStripMenuItem");
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            // 
+            // button5
+            // 
+            resources.ApplyResources(this.button5, "button5");
+            this.button5.Name = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // carSizeToolStripMenuItem
+            // 
+            this.carSizeToolStripMenuItem.Name = "carSizeToolStripMenuItem";
+            resources.ApplyResources(this.carSizeToolStripMenuItem, "carSizeToolStripMenuItem");
+            this.carSizeToolStripMenuItem.Click += new System.EventHandler(this.carSizeToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -178,6 +186,7 @@
         private System.Windows.Forms.ToolStripMenuItem dayliyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem weeklyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monthlyReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carSizeToolStripMenuItem;
     }
 }
 

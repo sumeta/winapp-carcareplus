@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\CarSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\CarSize.Designer.cs">
+      <DependentUpon>CarSize.cs</DependentUpon>
+    </Compile>
     <Compile Include="Db.cs" />
     <Compile Include="Form\CarIn.cs">
       <SubType>Form</SubType>
@@ -155,6 +161,9 @@
     <Compile Include="Form\Store.Designer.cs">
       <DependentUpon>Store.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form\CarSize.resx">
+      <DependentUpon>CarSize.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
