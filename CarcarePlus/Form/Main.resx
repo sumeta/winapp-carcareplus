@@ -195,13 +195,13 @@
     <value>17, 17</value>
   </metadata>
   <data name="menu1ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 24</value>
+    <value>43, 20</value>
   </data>
   <data name="menu1ToolStripMenuItem.Text" xml:space="preserve">
     <value>ตั้งค่า</value>
   </data>
   <data name="staffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>180, 22</value>
   </data>
   <data name="staffToolStripMenuItem.Text" xml:space="preserve">
     <value>พนักงาน</value>
@@ -210,25 +210,31 @@
     <value>BottomCenter</value>
   </data>
   <data name="carSizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>180, 22</value>
   </data>
   <data name="carSizeToolStripMenuItem.Text" xml:space="preserve">
     <value>ขนาดรถ</value>
   </data>
+  <data name="customerToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="customerToolStripMenuItem.Text" xml:space="preserve">
+    <value>ลูกค้า</value>
+  </data>
   <data name="ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 24</value>
+    <value>78, 20</value>
   </data>
   <data name="ToolStripMenuItem.Text" xml:space="preserve">
     <value>ข้อมูลพื้นฐาน</value>
   </data>
   <data name="ReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 24</value>
+    <value>52, 20</value>
   </data>
   <data name="ReportToolStripMenuItem.Text" xml:space="preserve">
     <value>รายงาน</value>
   </data>
   <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 24</value>
+    <value>94, 20</value>
   </data>
   <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
     <value>เกี่ยวกับโปรแกรม</value>
@@ -241,7 +247,7 @@
     <value>4, 2, 0, 2</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 28</value>
+    <value>800, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -262,25 +268,25 @@
     <value>4</value>
   </data>
   <data name="StoreToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 26</value>
+    <value>117, 22</value>
   </data>
   <data name="StoreToolStripMenuItem.Text" xml:space="preserve">
     <value>ข้อมูลร้าน</value>
   </data>
   <data name="dayliyReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 26</value>
+    <value>154, 22</value>
   </data>
   <data name="dayliyReportToolStripMenuItem.Text" xml:space="preserve">
     <value>DailyReport</value>
   </data>
   <data name="weeklyReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 26</value>
+    <value>154, 22</value>
   </data>
   <data name="weeklyReportToolStripMenuItem.Text" xml:space="preserve">
     <value>WeeklyReport</value>
   </data>
   <data name="monthlyReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 26</value>
+    <value>154, 22</value>
   </data>
   <data name="monthlyReportToolStripMenuItem.Text" xml:space="preserve">
     <value>MonthlyReport</value>
@@ -348,6 +354,12 @@
   <data name="&gt;&gt;staffToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;carSizeToolStripMenuItem.Name" xml:space="preserve">
+    <value>carSizeToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;carSizeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;ReportToolStripMenuItem.Name" xml:space="preserve">
     <value>ReportToolStripMenuItem</value>
   </data>
@@ -378,10 +390,10 @@
   <data name="&gt;&gt;AboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;carSizeToolStripMenuItem.Name" xml:space="preserve">
-    <value>carSizeToolStripMenuItem</value>
+  <data name="&gt;&gt;customerToolStripMenuItem.Name" xml:space="preserve">
+    <value>customerToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;carSizeToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;customerToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

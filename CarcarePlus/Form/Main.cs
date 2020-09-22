@@ -92,5 +92,10 @@ namespace CarcarePlus
         {
             new CarSize().ShowDialog();
         }
+
+        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Customer().ShowDialog();
+        }
     }
 }

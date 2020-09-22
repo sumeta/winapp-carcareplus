@@ -37,13 +37,14 @@
             this.StoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dayliyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.weeklyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monthlyReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button5 = new System.Windows.Forms.Button();
-            this.carSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +99,8 @@
             // 
             this.ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.staffToolStripMenuItem,
-            this.carSizeToolStripMenuItem});
+            this.carSizeToolStripMenuItem,
+            this.customerToolStripMenuItem});
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
             resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             // 
@@ -107,6 +109,12 @@
             this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
             resources.ApplyResources(this.staffToolStripMenuItem, "staffToolStripMenuItem");
             this.staffToolStripMenuItem.Click += new System.EventHandler(this.staffToolStripMenuItem_Click);
+            // 
+            // carSizeToolStripMenuItem
+            // 
+            this.carSizeToolStripMenuItem.Name = "carSizeToolStripMenuItem";
+            resources.ApplyResources(this.carSizeToolStripMenuItem, "carSizeToolStripMenuItem");
+            this.carSizeToolStripMenuItem.Click += new System.EventHandler(this.carSizeToolStripMenuItem_Click);
             // 
             // ReportToolStripMenuItem
             // 
@@ -145,11 +153,11 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // carSizeToolStripMenuItem
+            // customerToolStripMenuItem
             // 
-            this.carSizeToolStripMenuItem.Name = "carSizeToolStripMenuItem";
-            resources.ApplyResources(this.carSizeToolStripMenuItem, "carSizeToolStripMenuItem");
-            this.carSizeToolStripMenuItem.Click += new System.EventHandler(this.carSizeToolStripMenuItem_Click);
+            this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
+            resources.ApplyResources(this.customerToolStripMenuItem, "customerToolStripMenuItem");
+            this.customerToolStripMenuItem.Click += new System.EventHandler(this.customerToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -187,6 +195,7 @@
         private System.Windows.Forms.ToolStripMenuItem weeklyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monthlyReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carSizeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customerToolStripMenuItem;
     }
 }
 
