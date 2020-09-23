@@ -176,6 +176,9 @@
     <EmbeddedResource Include="Form\CarIn.resx">
       <DependentUpon>CarIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\History.resx">
       <DependentUpon>History.cs</DependentUpon>
     </EmbeddedResource>
