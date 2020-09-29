@@ -40,10 +40,10 @@ namespace CarcarePlus
                 while (read.Read())
                 {
                     dataGridView1.Rows.Add(new object[] {
-                        read.GetValue(read.GetOrdinal("Code")),
-                        read.GetValue(read.GetOrdinal("Firstname")),
-                        read.GetValue(read.GetOrdinal("Lastname")),
-                        read.GetValue(read.GetOrdinal("Tel"))
+                        read.GetValue(read.GetOrdinal("code")),
+                        read.GetValue(read.GetOrdinal("firstname")),
+                        read.GetValue(read.GetOrdinal("lastname")),
+                        read.GetValue(read.GetOrdinal("tel"))
                     });
                 }
             }
